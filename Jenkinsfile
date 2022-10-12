@@ -9,12 +9,12 @@ pipeline {
             steps {
 
                 nodejs(nodeJSInstallationName: "${params.NODE_VERSION}"){
-                    sh "node -v"
                     sh "npm install"
                     sh "npm run build"
                     sh "npm test"
                 }
             }
         }
+
     }
 }
