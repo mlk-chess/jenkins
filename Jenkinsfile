@@ -9,6 +9,7 @@ pipeline {
                 sh 'npm install'
                 sh "pnpm run build"
                 sh "pnpm test"
+            }
         }
     }
 }
