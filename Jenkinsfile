@@ -6,11 +6,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm i -g pnpm'
-                sh "pnpm install"
-                sh "pnpm build"
+                sh 'npm install'
+                sh "pnpm run build"
                 sh "pnpm test"
-            }
         }
     }
 }
