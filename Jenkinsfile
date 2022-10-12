@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        choice(name: "NODE_VERSION", choices: ["nodejs", "nodejsmlk"])
+        choice(name: "NODE_VERSION", choices: ["nodejsmlk"])
     }
     stages {
         stage('Build') {
